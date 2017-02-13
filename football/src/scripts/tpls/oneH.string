@@ -1,0 +1,40 @@
+<header class="header">
+		<span class="span-left yo-ico">&#xe790;</span>
+		<h2>
+			<a href="javascript:;;" class="on">热点</a>
+			<a href="javascript:;;">关注</a>
+		</h2>
+		<span class="span-right yo-ico">&#xe60c;</span>
+	</header>
+	
+<div class="swiper-container" id="con1">
+    <div class="swiper-wrapper">
+    	<div class="swiper-slide cont">
+    		<div class="one-top">
+				<ul>
+					<li class="one-on">足球现场</li>
+					<li>足球生活</li>
+					<li>足球美女</li>
+				</ul>
+			</div>
+				
+			<div class="swiper-container" id="con2">
+				<div class="swiper-wrapper">
+					<div class="one-list swiper-slide">
+						<div class="list">
+							<dl ng-repeat="item in data">
+								<dt><img ng-src="{{item.img}}" ></dt>
+								<dd>{{item.title}}</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="swiper-slide">足球生活</div>
+					<div class="swiper-slide">足球美女</div>
+				</div>
+			</div>
+				
+			
+    	</div>
+        <div class="swiper-slide">关注</div>
+    </div>
+</div>

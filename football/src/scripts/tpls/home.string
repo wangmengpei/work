@@ -1,0 +1,28 @@
+<div class="home">
+	<section class="section">
+		<div ui-view></div>
+	</section>
+	<footer class="footer">
+		<ul>
+			<li class="fo-on" ui-sref-active="fo-on" ui-sref='home.oneH'>
+				<span class="yo-ico">&#xe751;</span>
+				<p>首页</p>
+			</li>
+			<li ui-sref-active="fo-on" ui-sref='home.twoH'>
+				<span class="yo-ico">&#xe752;</span>
+				<p>发现</p>
+			</li>
+			<li>
+				<span class="yo-ico cen">&#xe608;</span>
+			</li>
+			<li ui-sref-active="fo-on" ui-sref='home.threeH'>
+				<span class="yo-ico">&#xe788;</span>
+				<p>我的</p>
+			</li>
+			<li ui-sref-active="fo-on" ui-sref='home.fourH'>
+				<span class="yo-ico">&#xe77a;</span>
+				<p>退出</p>
+			</li>
+		</ul>
+	</footer>
+</div>

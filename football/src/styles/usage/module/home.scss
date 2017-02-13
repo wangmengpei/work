@@ -1,0 +1,146 @@
+.home{
+	width: 100%;
+	height: 100%;
+	@include flexbox();
+	@include flex-direction(column);
+}
+
+.header{
+	width: 100%;
+	height: 44px;
+	background: #0CC140;
+	position: relative;
+	.span-left{
+		font-size: 30px;
+		color: #fff;
+		position: absolute;
+		left: 10px;
+	}
+	h2{
+		width: 34%;
+		margin-left: 33%;
+		line-height: 30px;
+		font-size: 16px;
+		a{
+			margin-top: 8px;
+			width: 50%;
+			float: left;
+			text-align: center;
+			color: #fff;
+			background: #34CA5F;
+			&:nth-child(1){
+				border-bottom-left-radius: 15px;
+				border-top-left-radius: 15px;
+			}
+			&:nth-child(2){
+				border-bottom-right-radius: 15px;
+				border-top-right-radius: 15px;
+			}
+		}
+		.on{
+			background: #5BCF7E;
+		}
+	}
+	.span-right{
+		color: #fff;
+		font-size: 30px;
+		position: absolute;
+		right: 10px;
+		top: 0px;
+	}
+}
+
+.section{
+	@include flex();
+	@include flexbox();
+	@include flex-direction(column)
+	width: 100%;/* @include 权重较高 设置宽高写在后面*/
+	overflow: hidden;
+	>div{
+		overflow: hidden;
+		
+		@include flexbox();
+		@include flex();
+		@include flex-direction(column)
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.one-top{
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	border-bottom: 1px #ccc solid;
+	outline: none;
+	ul{
+		@include flexbox();
+		text-align: center;
+		li{
+			@include flex();
+			font-size: 14px;
+			font-weight: bold;
+		}
+		.one-on{
+			border-bottom: 1px #43A35C solid;
+			color: #43A35C;
+		}
+	}
+}
+
+.one-list{
+	overflow: hidden;
+	dl{
+		float: left;
+		width: 50%;
+		margin-top: 10px;
+		img{
+			width: 95%;
+		}
+	}
+}
+
+.cont{
+	@include flexbox();
+	@include flex-direction(column);
+	width: 100%;
+	height: 100%;
+}
+
+.list{
+	
+	height:150%;
+}
+
+.footer{
+	width: 100%;
+	height: 44px;
+	background: #fff;
+	z-index: 10000;
+	border-top: 1px #ccc solid;
+	ul{
+		@include flexbox();
+		@include flex-direction();
+		text-align: center;
+		li{
+			@include flex();
+			position: relative;
+		}
+	}
+}
+
+.cen{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	background: #fff;
+	border-radius: 25px;
+	top: -10px;
+	left: 10px;
+	border: 1px #ccc solid;
+}
+
+.fo-on{
+	color: #17C54A;
+}
